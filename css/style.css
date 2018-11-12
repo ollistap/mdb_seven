@@ -1,0 +1,237 @@
+.loaderArea {
+    background: linear-gradient(to top, #ff5327 10%, #eea6ff 90%);
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    z-index: 100000;
+}
+
+.loader {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    border: 8px solid rgba(255,255,255,.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+}
+
+.loader:before {
+    animation: animate 2s infinite linear;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0) skew(0);
+    }
+
+    100% {
+        transform: rotate(180deg) skew(360deg);
+    }
+}
+
+
+.loader:after {
+    animation: animate2 2s infinite linear;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(0) skew(0);
+    }
+
+    100% {
+        transform: rotate(-180deg) skew(-360deg);
+    }
+}
+
+.view {
+    background: url("../img/airplanes-airport-blur-1539116.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+nav a{
+    color: white;
+}
+nav a:hover{
+    color: #c16ef4;
+}
+header h1 {
+    font-size: 70px;
+}
+header p {
+    font-size: 18px;
+}
+.colortext{
+    color: #c16ef4;
+}
+
+header strong{
+    border: 4px solid white;
+    font-size: 24px;
+    padding: 3px 3px;
+    font-weight: bold;
+}
+
+footer strong{
+    border: 4px solid white;
+    font-size: 24px;
+    padding: 3px 3px;
+    font-weight: bold;
+}
+
+
+.view1{
+    background: url("../img/sprite1.jpg");
+}
+.view2{
+    background: url("../img/sprite2.jpg");
+}
+
+.container2{
+    background: url("../img/pexels-photo-39811.jpeg")no-repeat center center;
+    background-size: cover;
+}
+.brand{
+    width: 250px;
+    height: 210px;
+    background: url("../img/brand.png")no-repeat center center;
+    background-size: cover;
+}
+.brand:hover{
+    width: 250px;
+    height: 210px;
+    background: url("../img/brand2.jpg")no-repeat center center;
+    background-size: cover;
+}
+.container2 li:hover {
+    color: #c16ef4;
+}
+.container2 a > p {
+    font-size: 12px;
+
+}
+.container2 a > p:hover{
+    color: #c16ef4;
+}
+
+
+.container3{
+    background: url("../img/pexels-photo-39811white.jpeg")no-repeat center center;
+    background-size: cover;
+}
+.container3 h5{
+    font-size: 18px;
+}
+.circle{
+    border: 3px solid #6e6e6e;
+    border-radius: 30px;
+}
+.circle:hover{
+    border: 3px solid #BE87CC;
+    border-radius: 30px;
+}
+.circle2{
+    border: 3px solid black;
+    border-radius: 30px;
+}
+.circle2:hover{
+    border: 3px solid black;
+    background: #BE87CC;
+    border-radius: 30px;
+}
+
+
+.container4{
+    background: url("../img/blur-buildings-city-373481.jpg")no-repeat center center;
+    background-size: cover;
+}
+.container5{
+    background: url("../img/blur-buildings-city-373481white.jpg")no-repeat center center;
+    background-size: cover;
+}
+.container5 h5{
+    font-size: 16px;
+}
+.container5 p{
+    font-size: 16px;
+}
+.container7{
+    background: url("../img/apple-books-computers-115655.jpg")no-repeat center center;
+    background-size: cover;
+}
+.container9{
+    background: url("../img/pexels-photo-1465904.jpeg")no-repeat center center;
+    background-size: cover;
+}
+.h-25{
+    font-size: 15px;
+    padding-top: 25px;
+}
+
+
+.purple-border textarea {
+    border: 1px solid #ba68c8;
+    background: #251928;
+}
+.purple-border .form-control:focus {
+    border: 1px solid #ba68c8;
+    box-shadow: 0 0 0 0.2rem rgba(186, 104, 200, .25);
+}
+
+.green-border-focus .form-control:focus {
+    border: 1px solid #8bc34a;
+    box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+}
+
+@media (min-width: 768px) {
+    .view {
+        overflow-y:hidden;
+        margin-top: -62px;
+    }
+}
+.navbar {
+    z-index: 1;
+}
+.navbar {
+    background-color: transparent;
+}
+.top-nav-collapse {
+    background-color: #000000;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        overflow-y:hidden;
+        background-color: #000000;
+    }
+    header h1 {
+        font-size: 35px;
+    }
+    header p {
+        font-size: 14px;
+    }
+}
+
+html,
+body,
+header,
+.container1,
+.container6,
+.view {
+    height: 100%;
+    overflow-x:hidden;
+}
